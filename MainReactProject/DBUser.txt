@@ -1,0 +1,4 @@
+Admin
+ReactJSProject
+mongodb+srv://Admin:ReactJSProject@test.zeihrbu.mongodb.net/?retryWrites=true&w=majority&appName=Test
+mongodb+srv://Admin:ReactJSProject@test.zeihrbu.mongodb.net/

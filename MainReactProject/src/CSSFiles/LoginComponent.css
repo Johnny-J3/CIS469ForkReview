@@ -1,0 +1,44 @@
+.loginContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45rem;
+    background-color: #f0dec7;
+}
+.loginFieldset{
+    background-color: #c9c6c2;
+    margin:0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-center;
+    align-items: stretch;
+    width: auto;
+    padding: 30px;
+}
+.loginFieldset h2{
+    font-size: 2.5rem;
+    margin: 10px 0px;
+}
+.passContainer input, .userContainer input, .loginButton{
+    font-size: 1.5rem;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.userContainer, .passContainer, .loginButton{
+    margin: 10px 0px;
+}
+.loginButton{
+    background-color: blue;
+    color: white;
+    border-color: blue;
+    padding: 10px;
+}
+.logError{
+    background-color: #ffcccb;
+    color: #ff0033;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1.5rem;
+    margin: 0px;
+}

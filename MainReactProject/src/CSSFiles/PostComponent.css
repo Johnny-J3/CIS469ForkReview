@@ -1,0 +1,50 @@
+body{
+    /*background-color: #CEE6F2;*/
+    background-color: #f0dec7;
+}
+form{
+    margin: 0px;
+}
+.reviewFieldset{
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.pageHolder{
+    margin: 2rem 5rem;
+}
+.pageHolder h2{
+    font-size: 4rem;
+    margin: 0px;
+    color: rgb(4, 30, 66);
+}
+.createPostForm{
+    border-width: 0px;
+}
+.subContainer input{
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    border-radius: 10px;
+}
+.subContainer label{
+    color: rgb(4, 30, 66);
+    font-size: 1.8rem;
+}
+.subContainer textarea{
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+}
+.submitButton{
+    background-color: rgb(4, 30, 66);
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+.starInput{
+    width: 6rem !important;
+}

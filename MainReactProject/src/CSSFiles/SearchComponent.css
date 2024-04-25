@@ -1,0 +1,12 @@
+.searchFields{
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.searchContainer form{
+    border-width: 0px;
+}
+.searchContainer{
+    dipslay: flex;
+    
+}
