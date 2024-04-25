@@ -86,7 +86,7 @@ function HomePage(props){
         return(
             <>
             <Header/>
-            <Menu loggedIn = {props.loggedIn} userName={props.userName}/>
+            <Menu loggedIn = {props.loggedIn} userName={props.userName} setLoggedIn={props.setLoggedIn}/>
             {error ? <p key = {0} className="searchError">Your search came up empty. Check your search terms and network connection.</p> : null}
             <Banner/>
             <Container fluid className="searchContainer">

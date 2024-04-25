@@ -10,9 +10,9 @@ function CreatePostPage(props){
         return(
             <>
             <Header/>
-            <Menu loggedIn = {props.loggedIn} userName={props.userName}/>
+            <Menu loggedIn = {props.loggedIn} userName={props.userName} setLoggedIn = {props.setLoggedIn}/>
             <Banner/>
-            <CreatePostForm loggedIn = {props.loggedIn} userName={props.userName}/>
+            <CreatePostForm loggedIn = {props.loggedIn} userName={props.userName} setLoggedIn={props.setLoggedIn}/>
             </>
         );
     }else{

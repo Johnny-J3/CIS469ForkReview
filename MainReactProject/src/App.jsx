@@ -34,8 +34,8 @@ function App() {
             <Route path="/create"
               element={<CreateAccountPage/>}
             />
-            <Route path="/NewPost" render={(props) => <CreatePostPage {...props}/>} element={ <CreatePostPage loggedIn = {loggedIn} userName={userName}/>}/>
-            <Route path="/Home" render={(props) => <HomePage {...props}/>} element={ <HomePage loggedIn = {loggedIn} userName={userName}/>}/>
+            <Route path="/NewPost" render={(props) => <CreatePostPage {...props}/>} element={ <CreatePostPage loggedIn = {loggedIn} userName={userName} setloggedIn={setloggedIn}/>}/>
+            <Route path="/Home" render={(props) => <HomePage {...props}/>} element={ <HomePage loggedIn = {loggedIn} userName={userName} setloggedIn={setloggedIn}/>}/>
 
         </Routes> 
       </Router> 

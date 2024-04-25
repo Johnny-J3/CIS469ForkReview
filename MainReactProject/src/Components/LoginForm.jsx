@@ -1,6 +1,7 @@
 import "../CSSFiles/LoginComponent.css"
 import {Link, Navigate} from "react-router-dom";
 import { useState, useRef } from 'react'
+import {MD5} from "crypto-js";
 function LoginForm(props){
 
     //states to hold form data
@@ -21,7 +22,7 @@ function LoginForm(props){
         const requestOptions = {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ "userID": userVal, "password": passVal })
+          body: JSON.stringify({ "userID": userVal, "password": MD5(passVal).toString() })
         };
         fetch("http://localhost:3000/users/", requestOptions)
           .then((res) => {
@@ -31,7 +32,7 @@ function LoginForm(props){
             return res.json();
           })
           .then((data) => {
-            if (data.length > 0 && data[0].userID === userVal && passVal === data[0].password){
+            if (data.length > 0 && data[0].userID === userVal && MD5(passVal).toString() === data[0].password){
               props.setloggedIn(true);
               props.setUserName(userVal);
               //redirect the page to home of successful
@@ -72,7 +73,7 @@ function LoginForm(props){
         <Navigate
             to={{
             pathname: "/Home",
-            state: { userName: props.userName, loggedIn: props.loggedIn }
+            state: { userName: props.userName, loggedIn: props.loggedIn, setLoggedIn: props.setLoggedIn }
           }}
         />
       

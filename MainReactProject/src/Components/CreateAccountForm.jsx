@@ -1,5 +1,6 @@
 import "../CSSFiles/LoginComponent.css"
 import { useState, useRef } from 'react'
+import {MD5} from "crypto-js";
 function CreateAccountForm(props){
 
     //references to hold form data
@@ -23,7 +24,7 @@ function CreateAccountForm(props){
           const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ "userID": userVal, "password": passVal1 })
+            body: JSON.stringify({ "userID": userVal, "password": MD5(passVal1).toString()})
           };
           fetch('http://localhost:3000/user/', requestOptions)
             .then((res) => {

@@ -8,6 +8,12 @@ function Menu(props){
         <>
             <div className="topMenu">
             <Link to={{
+            pathname: "/",
+            state: { setloggedIn: props.setloggedIn, userName: null, loggedIn: false }
+          }}>
+                <button className="menuButton">Logout</button>
+            </Link>
+            <Link to={{
             pathname: "/Home",
             state: { userName: props.userName, loggedIn: props.loggedIn }
           }}>
