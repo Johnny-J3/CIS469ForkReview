@@ -1,0 +1,5 @@
+# ForkReview
+ForkReview is an online website where users can post reviews of various restaurants. Someone who is looking to try a restaurant can simply search it on ForkReview and read the reviews there. If they feel convinced by other diners’ experiences, then they may decide to try out that new place. ForkReview is similar to a social media site where users can create accounts, login to view the sites, create reviews of various restaurants, and view the reviews of other users and specific restaurants. The site has a search functionality where the users can search for reviews of specific users, specific restaurants, and find reviews that are greater than a certain number of stars. The site integrates a database to store the users and reviews, and it has a secure login system.
+
+## Setup
+To set up this site, both the backend server and the frontend react application must be run. To do this, one must first "npm install" all of the dependencies in the backend folder. Next, they must run "npm start" on the server. Then, they can open the react folder in a different terminal. There, they can run "npm install" and then "npm run dev" to open the development site. 
